@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" herf="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>mathivarman</h1>
+    
+        <div>
+            <input type="text" id="input" placeholder="enter number">
+        </div>
+        <br>
+        <div><button type="submit" onclick="calmeter()">Calculate</button></div>
+        <div id="meter"></div>
+    
+    <script>
+        
+        function calmeter(){
+            let x=0;
+            let num=0;
+            num=Number(document.getElementById("input").value);
+            // alert(num);
+            x=num*100
+console.log(x)
+            let result=document.querySelector('#meter')
+            result.innerHTML="no in cm"+x
+            
+        }
+        
+    </script>
+</body>
+</html>
